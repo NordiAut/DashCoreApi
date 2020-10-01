@@ -1,14 +1,14 @@
-// using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace CoreApi.Models
 {
-    public class ApiContext
+    public class ApiContext : DbContext
     {
         // Todo fix entity framework
-        // public ApiContext(DbContextOptions<ApiContext> options) : base(options) { }
+    public ApiContext(DbContextOptions<ApiContext> options) : base (options) {}
 
-        // public DbSet<Customer> Customers { get; set; }
-        // public DbSet<Order> Orders { get; set; }
-        // public DbSet<Server> Servers { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<Server> Servers { get; set; }
     }
 }
