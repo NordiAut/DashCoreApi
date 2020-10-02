@@ -1,8 +1,6 @@
 using CoreApi.Models;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Data;
-using System.Data.Common;
 using System.Linq;
 
 namespace CoreApi.Controllers

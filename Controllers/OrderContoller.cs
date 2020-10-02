@@ -80,7 +80,7 @@ namespace CoreApi.Controllers
             return new ObjectResult(groupedResult);
         }
 
-        [HttpGet("GetOrder/{n}", Name="GetOrder")]
+        [HttpGet("GetOrder/{id}", Name="GetOrder")]
         public IActionResult GetOrder(int id)
         {
             var order = _ctx.Orders.Include(o => o.Customer).First(o => o.Id == id);
