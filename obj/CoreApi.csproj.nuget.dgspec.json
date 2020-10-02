@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\oliver.rotter\\Desktop\\CoreAngularTutorial\\CoreApi\\CoreApi.csproj": {}
+    "C:\\Users\\oliver.rotter\\Desktop\\CoreAngularTutorial\\CoreApi\\CoreApi.csproj": {}
   },
   "projects": {
-    "c:\\Users\\oliver.rotter\\Desktop\\CoreAngularTutorial\\CoreApi\\CoreApi.csproj": {
+    "C:\\Users\\oliver.rotter\\Desktop\\CoreAngularTutorial\\CoreApi\\CoreApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\oliver.rotter\\Desktop\\CoreAngularTutorial\\CoreApi\\CoreApi.csproj",
+        "projectUniqueName": "C:\\Users\\oliver.rotter\\Desktop\\CoreAngularTutorial\\CoreApi\\CoreApi.csproj",
         "projectName": "CoreApi",
-        "projectPath": "c:\\Users\\oliver.rotter\\Desktop\\CoreAngularTutorial\\CoreApi\\CoreApi.csproj",
+        "projectPath": "C:\\Users\\oliver.rotter\\Desktop\\CoreAngularTutorial\\CoreApi\\CoreApi.csproj",
         "packagesPath": "C:\\Users\\oliver.rotter\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\oliver.rotter\\Desktop\\CoreAngularTutorial\\CoreApi\\obj\\",
+        "outputPath": "C:\\Users\\oliver.rotter\\Desktop\\CoreAngularTutorial\\CoreApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\oliver.rotter\\AppData\\Roaming\\NuGet\\NuGet.Config",

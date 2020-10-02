@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WKqSqO6iwQwwLHFlpbYLdZSuOe+ssnHa529glV5RYwO5hl13OrDSvv4qwLR0Yz82r03eLLb7aSOQdXfVaIthLg==",
+  "dgSpecHash": "RJ8wKbKZ2GPnGgksYgZcycuQsvKr1hHb/Ay2sZl1nvmkW74+3wOvn7ppMzUhVl9HWZvnzBxV/3Q0D7eiAqc+3Q==",
   "success": true,
-  "projectFilePath": "c:\\Users\\oliver.rotter\\Desktop\\CoreAngularTutorial\\CoreApi\\CoreApi.csproj",
+  "projectFilePath": "C:\\Users\\oliver.rotter\\Desktop\\CoreAngularTutorial\\CoreApi\\CoreApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\oliver.rotter\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\oliver.rotter\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
