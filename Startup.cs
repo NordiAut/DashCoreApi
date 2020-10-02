@@ -51,6 +51,10 @@ namespace CoreApi
 
             app.UseRouting();
 
+            app.UseMvc(routes =>
+                routes.MapRoute("default", "api/{controller}/{action}/{id?}")
+            );
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
