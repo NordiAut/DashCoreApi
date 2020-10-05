@@ -29,11 +29,13 @@ namespace CoreApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // services.AddMvc();
-            services.AddControllersWithViews();
+            //services.AddMvc();
+            services.AddControllers();
+            
+            
 
             _connectionString = Configuration["secretConnectionString"];
-            services.AddControllers();
+            
             services.AddEntityFrameworkNpgsql().AddDbContext<ApiContext>(
                 opt => opt.UseNpgsql(_connectionString));
 
@@ -50,11 +52,11 @@ namespace CoreApi
 
             seed.SeedData(20, 1000);
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            // app.UseAuthorization();
 
             // app.UseMvc(routes =>
             //     routes.MapRoute("default", "api/{controller}/{action}/{id?}")
@@ -62,8 +64,12 @@ namespace CoreApi
 
             app.UseEndpoints(endpoints =>
             {
-                //endpoints.MapControllers();
-                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllers();
+                //endpoints.MapControllerRoute("default", "{controller=Home}/{action}/{id?}");
+                //endpoints.MapControllerRoute("default", "api/{controller}/{action}/{id?}");
+                //Todo Check Why order is not shown
+                
+
             });
 
         }

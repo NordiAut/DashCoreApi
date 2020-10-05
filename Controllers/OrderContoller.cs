@@ -2,21 +2,29 @@ using CoreApi.Models;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualBasic;
 using System;
-using Microsoft.AspNetCore.Mvc.Diagnostics;
-using Microsoft.AspNetCore.Identity;
+
 
 namespace CoreApi.Controllers
 {
     [Route("api/[controller]")]
-    public class OrderContoller
+    public class OrderController
     {
         private readonly ApiContext _ctx;
 
-        public OrderContoller(ApiContext ctx)
+        public OrderController(ApiContext ctx)
         {
             _ctx = ctx;
+        }
+
+        // GET api/order
+        [HttpGet]
+        public IActionResult Get()
+        {
+            var data = _ctx.Orders.OrderBy(c => c.Id);            
+
+              return new ObjectResult(data);
+
         }
 
         // Get api/order/pageNumber/pageSize
@@ -39,6 +47,7 @@ namespace CoreApi.Controllers
             return new ObjectResult(response);
         }
 
+       
         [HttpGet("ByState")]
         public IActionResult ByState( )
         {

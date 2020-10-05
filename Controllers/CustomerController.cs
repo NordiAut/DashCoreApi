@@ -17,7 +17,7 @@ namespace CoreApi.Controllers
             _ctx = ctx;
         }
         
-        // GET api/customers
+        // GET api/customer
         [HttpGet]
         public IActionResult Get()
         {
