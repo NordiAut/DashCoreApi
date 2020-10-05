@@ -12,7 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using CoreApi.Models;
 using Microsoft.EntityFrameworkCore;
-
+using System.Reflection;
 
 namespace CoreApi
 {
@@ -29,10 +29,13 @@ namespace CoreApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(opt =>{
+                opt.AddPolicy("CorsPolicy",
+                c => c.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            });
+
             //services.AddMvc();
-            services.AddControllers();
-            
-            
+            services.AddControllers();   
 
             _connectionString = Configuration["secretConnectionString"];
             
@@ -48,7 +51,8 @@ namespace CoreApi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
+                app.UseCors("CorsPolicy");
+            }            
 
             seed.SeedData(20, 1000);
 
